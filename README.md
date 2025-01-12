@@ -49,13 +49,13 @@ Format of Bitwarden File
 
 Migration from Bitwarden to Apple Passwords, mapping:
 
-| Apple File Column | Bitwarden File Column | Transformations / Comments                                                                                                                                          |
-| --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Title | name |                                                                                                                                                                     |
-| URL | login_uri | You can clean up URLs and add things like `https`. If multiple URLs in bitwarden, create a new row. All these will get imported as individual items, unfortunately. |
-| Username | login_username |                                                                                                                                                                     |
-| Password | login_password |                                                                                                                                                                     |
-| Notes | fields, notes | Recommended to combine both columns as there is custom fields are not supported by Apple Password                                                                   |
-| OTPAuth | login_totp | Note: this is untested                                                                                                                                              |
+| Apple File Column | Bitwarden File Column | Transformations / Comments                                                                                                                                         |
+| --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Title | name |                                                                                                                                                                    |
+| URL | login_uri | If multiple URLs in bitwarden, create a new row. All these will get imported as individual items, unfortunately. |
+| Username | login_username |                                                                                                                                                                    |
+| Password | login_password |                                                                                                                                                                    |
+| Notes | fields, notes | Recommended to combine both columns as there is custom fields are not supported by Apple Password                                                                  |
+| OTPAuth | login_totp | Note: this is untested                                                                                                                                             |
 
 https://blog.vikramchauhan.com/evolving-passwords-transitioning-from-bitwarden-to-apple-passwords/
